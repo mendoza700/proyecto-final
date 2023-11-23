@@ -13,7 +13,7 @@ public class EmpleadosService {
            Empleados empleados = new Empleados();
             empleados.setNombre(nombre);
             empleados.setPuesto(puesto);
-            ClientesDAO.crearClientesDB(empleados);
+            EmpleadosDAO.crearEmpleadosDB(empleados);
         }
 
         public static void listarempleados() {

@@ -4,7 +4,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
     public class ClientesDAO {
-        public static void crearClientesDB(Empleados clientes) {
+        public static void crearClientesDB(Clientes clientes) {
             Conexion db_connect = new Conexion();
             try (Connection conexion = (Connection) db_connect.get_conConnection()) {
                 PreparedStatement ps = null;
